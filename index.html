@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <label class="hamburger-menu">
+    <input type="checkbox">
+  </label>
+  <aside class="sidebar">
+    <nav>
+      <ul class="nav-list">
+        <li class="font"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li class="font">
+          <a href="#anime"><i class="fas fa-film"></i> Anime</a>
+          <!-- <ul class="submenu">
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">News</a></li>
+          </ul> -->
+        </li>
+        <li class="font"><a href="#"><i class="fas fa-video"></i> Movies</a></li>
+        <li class="font"><a href="#"><i class="fas fa-laptop"></i> Tech</a></li>
+        <li class="font"><a href="#"><i class="fas fa-book"></i> Study</a></li>
+        <li class="font"><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <!-- Logo -->
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" onkeyup="searchContent()" placeholder="Search">
+          <button class="button"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </header>
+  </aside>
+
+  <main>
+    <!-- HOME VIEW: main categories -->
+    <section class="content-section">
+      <h1>AR Website: Your Hub for Anime, Movies, Tech & Study</h1>
+
+      <div class="content-grid">
+        <!-- Anime category card -->
+        <div class="content-card js-open-category" data-category="anime">
+          <img src="/images/luffy ar247.jpg" alt="Anime" loading="lazy">
+          <h3>Anime</h3>
+          <p>Top anime like One Piece, Naruto, AOT, HxH and more.</p>
+          <a href="#" class="btn">Open Anime Section</a>
+        </div>
+
+        <!-- Movies category card -->
+        <div class="content-card js-open-category" data-category="movie">
+          <img src="/images/cinema-movie-logo-with-gradient-background-template_502990-937.avif" alt="Movies" loading="lazy">
+          <h3>Movies</h3>
+          <p>Latest movies, reviews and breakdowns.</p>
+          <a href="#" class="btn">Open Movies Section</a>
+        </div>
+
+        <!-- Tech category card -->
+        <div class="content-card js-open-category" data-category="tech">
+          <img src="/images/modern-tech-logo-cff9aa02-7818-44f3-961b-7d1427a1bc25.jpg" alt="Tech" loading="lazy">
+          <h3>Tech</h3>
+          <p>Gadgets, coding & tech blogs.</p>
+          <a href="#" class="btn">Open Tech Section</a>
+        </div>
+
+        <!-- Study category card -->
+        <div class="content-card js-open-category" data-category="study">
+          <img src="/images/Planning-to-study-abroad.jpg" alt="Study" loading="lazy">
+          <h3>Study</h3>
+          <p>Notes, guides and study materials.</p>
+          <a href="#" class="btn">Open Study Section</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY LIST VIEW (e.g. Anime -> One Piece, Naruto, etc.) -->
+    <section class="list-section" id="listView" style="display:none;">
+      <!-- JS se yaha cards generate honge -->
+    </section>
+
+    <!-- DETAIL VIEW (single anime/movie page) -->
+    <section class="post-section" id="postView" style="display:none;">
+      <!-- JS se yaha content inject hoga -->
+    </section>
+
+    <div class="loader"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Anime</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Study</a></li>
+        </ul>
+      </div>
+      <!-- Privacy Policy -->
+      <div class="footer-section">
+        <h3>Privacy Policy</h3>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3>Social media links</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <!-- Contact Us -->
+      <div class="footer-section">
+        <h3>Contact us</h3>
+        <p>Email: Viveksah200515@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AR. All rights reserved</p>
+      <button class="back-to-top">Back to Top</button>
+    </div>
+  </footer>
+
+  <script src="style.js"></script>
+</body>
+
+</html>
